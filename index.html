@@ -1,0 +1,203 @@
+<!DOCTYPE html><!--   -->
+<html lang="en">
+<head> <!-- Head of HTML linking ti stylesheet   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body><!-- main wrapper for teh whole doc  -->
+<div id="Wrapper1">
+    <header></header><!-- First of the windows, decided to make 8 of them in total it is a bit complicated but i wanted different IDs as i id not want to mix code for all of them
+      as the Quiz is slightly different and it was easier in the end for debugging -->
+    <div id="DivButton0">
+        <p>Hello user please enter your name below and hit start to begin your Quiz.
+            I decided to leave the --- TEST --- function i used for myself as it might be helpful during testing on top of the comments.
+        Press the button to use it if you decide, the test window is resizable as well.</p>
+        <input type="text" id="userName" placeholder="Enter your name here" value="Gemma Deery" >
+        <button id="StartQuiz" onclick="getUserName(0)">Start</button>
+    </div><!-- The first window is a prime example i did not add sections as i felt this would have made the code even more bloated  -->
+    <div id="DivButton1"> <!-- first we hae the headers  -->
+        <div id="Head1">
+        <h1 id="Quiz1">My Quiz</h1> <!-- then Quiz title  -->
+        <h2 id="Count1">Question 1 of 5</h2> <!--  Question numbers -->
+        <p id="Question1"></p>
+        </div><!-- Each radio button has its label with unique references  -->
+        <div id="Button1A">
+            <input id="answer1A" type="radio" name="answer" value="answer A">
+            <label id="label1A" for="answer1A">answer A</label>
+        </div>
+        <div id="Button1B">
+        <input id="answer1B" type="radio" name="answer" value="answer B">
+            <label id="label1B" for="answer1B">answer B</label>
+        </div>
+        <div id="Button1C">
+        <input id="answer1C" type="radio" name="answer" value="answer C">
+             <label id="label1C" for="answer1C">answer C</label>
+        </div>
+        <div id="Button1D">
+        <input id="answer1D" type="radio" name="answer" value="answer D">
+             <label id="label1D" for="answer1D">answer D</label>
+        </div>
+        <div id="Button1E">
+        <button id="Next1" onclick="checked(1)">Next</button>
+        </div>
+    </div><!-- All below code is a copy of above, although very complicated in the beelining it was easy to add/remove windows and debug in the end with unique IDs  -->
+    <div id="DivButton2">
+        <div id="Head2">
+            <h1 id="Quiz2">My Quiz</h1>
+            <h2 id="Count2">Question 2 of 5</h2>
+            <p id="Question2"></p>
+        </div>
+        <div id="Button2A">
+            <input id="answer2A" type="radio" name="answer" value="answer A">
+            <label id="label2A" for="answer2A">answer A</label>
+        </div>
+        <div id="Button2B">
+            <input id="answer2B" type="radio" name="answer" value="answer B">
+            <label id="label2B" for="answer2B">answer B</label>
+        </div>
+        <div id="Button2C">
+            <input id="answer2C" type="radio" name="answer" value="answer C">
+            <label id="label2C" for="answer2C">answer C</label>
+        </div>
+        <div id="Button2D">
+            <input id="answer2D" type="radio" name="answer" value="answer D">
+            <label id="label2D" for="answer2D">answer D</label>
+        </div>
+        <div id="Button2E">
+            <button id="Previous2" onclick="previousNavigation (1)">Previous</button>
+            <button id="Next2" onclick="checked(2)">Next</button>
+        </div>
+    </div>
+    <div id="DivButton3">
+        <div id="Head3">
+            <h1 id="Quiz3">My Quiz</h1>
+            <h2 id="Count3">Question 3 of 5</h2>
+            <p id="Question3"></p>
+        </div>
+        <div id="Button3A">
+            <input id="answer3A" type="radio" name="answer" value="answer A">
+            <label id="label3A" for="answer3A">answer A</label>
+        </div>
+        <div id="Button3B">
+            <input id="answer3B" type="radio" name="answer" value="answer B">
+            <label id="label3B" for="answer3B">answer B</label>
+        </div>
+        <div id="Button3C">
+            <input id="answer3C" type="radio" name="answer" value="answer C">
+            <label id="label3C" for="answer3C">answer C</label>
+        </div>
+        <div id="Button3D">
+            <input id="answer3D" type="radio" name="answer" value="answer D">
+            <label id="label3D" for="answer3D">answer D</label>
+        </div>
+        <div id="Button3E">
+            <button id="Previous3" onclick="previousNavigation (2)">Previous</button>
+            <button id="Next3" onclick="checked(3)">Next</button>
+        </div>
+    </div>
+    <div id="DivButton4">
+        <div id="Head4">
+            <h1 id="Quiz4">My Quiz</h1>
+            <h2 id="Count4">Question 4 of 5</h2>
+            <p id="Question4"></p>
+        </div>
+        <div id="Grid">
+            <div id="Button4A">
+                <input id="answer4A" type="radio" name="answer" value="answer A">
+                <label id="label4A" for="answer4A"><img id="myImg" src="Images/cat.jpg" alt ="A cat" width="200" height="200"></label>
+            </div>
+            <div id="Button4B">
+                <input id="answer4B" type="radio" name="answer" value="answer B">
+                <label id="label4B" for="answer4B"><img id="myImg2" src="Images/cat.jpg" alt ="A cat" width="200" height="200"></label>
+            </div>
+            <div id="Button4C">
+                <input id="answer4C" type="radio" name="answer" value="answer C">
+                <label id="label4C" for="answer4C"><img id="myImg3" src="Images/cat.jpg" alt ="A cat" width="200" height="200"></label>
+            </div>
+            <div id="Button4D">
+                <input id="answer4D" type="radio" name="answer" value="answer D">
+                <label id="label4D" for="answer4D"><img id="myImg4" src="Images/cat.jpg" alt ="A cat" width="200" height="200"></label>
+            </div>
+        </div>
+        <div id="Button4E">
+            <button id="Previous4" onclick="previousNavigation (3)">Previous</button>
+            <button id="Next4" onclick="checked(4)">Next</button>
+        </div>
+    </div>
+    <div id="DivButton5">
+        <div id="Head5">
+            <h1 id="Quiz5">My Quiz</h1>
+            <h2 id="Count5">Question 5 of 5</h2>
+            <p id="Question5">Math time !</p>
+        </div>
+        <div id="Math">
+            <p  id="equationIntro">Solve the following equation (use either words or numbers)</p>
+            <p id="equation">place holder</p>
+        </div>
+        <div id="Button5A">
+            <input id="answer5A" type="text" name="answer" placeholder="Enter your answer ..." required>
+        </div>
+        <div id="Button5E">
+            <button id="Previous5" onclick="previousNavigation (4)">Previous</button>
+            <button id="Next5" onclick="submit(5)">Submit</button>
+        </div>
+    </div>
+    <div id="DivButton6">
+        <img src="Images/bronze.png" id="medal" alt="Prize" width="229" height="320">
+        <div id="score">
+        <h1>SCORE</h1>
+            <p id="scoreParagraph1">placeholder</p>
+            <p id="scoreParagraph2">placeholder</p>
+            <p id="scoreParagraph3">placeholder</p>
+        </div>
+        <p id="scoreParagraph4">placeholder</p>
+        <div id="Button6E">
+            <button id="Previous6" onclick="previousNavigation (5)">Previous</button>
+            <button id="Finish" onclick="nextNavigation(6)">Finish</button>
+        </div>
+    </div>
+    <div id="DivButton7">
+    <p id="goodGame"> GOOD GAME !!!</p>
+    </div>
+    <div id="test"><!--  This was for testing but i felt it might be helpful to leave out to read the code a bit easier -->
+        <button id="TestButton" onclick="testMenu()">TEST MENU</button>
+        <div id="testSub">
+        <h3>TESTING</h3>
+            <p id="p1">1-test</p>
+            <p id="p2">2-test</p>
+            <p id="p3">3-test</p>
+            <p id="p4">4-test</p>
+            <p id="p5">5-test</p>
+            <p id="p6">6-test</p>
+            <p id="p7">7-test</p>
+            <p id="p8">8-test</p>
+            <p id="p9">9-test</p>
+            <p id="p10">10-test</p>
+            <p id="p11">11-test</p>
+            <p id="p12">12-test</p>
+            <p id="p13">13-test</p>
+            <p id="p14">14-test</p>
+            <p id="p15">15-test</p>
+            <p id="p16">16-test</p>
+            <p id="p17">17-test</p>
+            <p id="p18">18-test</p>
+            <p id="p19">19-test</p>
+            <p id="P20">20-test</p>
+            <p id="p21">21-test</p>
+            <p id="p22">22-test</p>
+            <p id="p23">23-test</p>
+            <p id="p24">24-test</p>
+            <p id="p25">25-test</p>
+            <p id="p26">26-test</p>
+            <p id="p27">27-test</p>
+            <p id="p28">28-test</p>
+            <p id="p29">29-test</p>
+            <p id="P30">30-test</p>
+        </div>
+    </div>
+    <footer><a href=mailto:"aleksandar.mladenov@student.griffith.ie" target="_blank">Aleksandar Mladenov Student Number 2976196 Email: aleksandar.mladenov@student.griffith.ie</a></footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

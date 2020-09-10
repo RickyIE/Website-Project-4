@@ -1,0 +1,698 @@
+{
+    padding: 0px;/*Removes default margins from HTML and sets corners*/
+    margin: 0px; /*Removes default margins from HTML and sets corners*/
+    font-family: "Times New Roman", "Arial";/*change font to a web safe font */
+
+} /*   */
+/* Styles the body to make background responsive  */
+body{
+    background: url("Images/artificial-intelligence-3382507_1920.jpg") no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+/*#DivButton0,#DivButton1,#DivButton2,#DivButton3,#DivButton4,#DivButton5 {*/
+/*    visibility: hidden;*/
+/*}*/
+
+/* Removes default colour from hyperlinks  */
+a {
+    text-decoration: none;
+    color: white;
+}
+/* Footer is styled here as i saved the bottom on teh sheet for other functions  */
+footer{
+    display: inline-block;
+    font-size: 2em;
+    font-style: italic;
+    background: black;
+    height: 100px;
+    width: 100%;
+    border: white solid 5px;
+    padding-top: 30px;
+    text-align: center;
+    position: fixed;
+    top: 90%;
+    right: 0%;
+}
+
+/*  styles all labels so that once they are clicked the whole radio button is checked making it easier for the user */
+
+label {
+    width: 700px;
+    height: 50px;
+    position: absolute;
+}
+/* All bellow windows follow he same pattern */
+#DivButton0 {
+}
+/*  The Starting window has the highest Z-index and is positioned in the middle
+top and left are 50% but that is not to the middle of div but from teh sides
+margin top-margin left below corrects that */
+#DivButton0 {
+    display: grid;
+    height: 800px;
+    width: 800px;
+    background-color: #368200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+    z-index: +5;
+    overflow: hidden;
+}
+#DivButton0 * {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+#DivButton0 p {
+    padding: 200px;
+    background-color: red;
+    background: url("../assignment4/Images/tech-3041437_1920.jpg") center;
+    color: lightgreen;
+    text-shadow: 3px 3px 0 black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+
+}
+#userName{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+#StartQuiz {
+    width: 200px;
+
+}
+
+/* This Window is descriptive of all window styling below  */
+
+/* Positioning for the main container some use flex others grid, others both
+ they all have Z-indexes as they are constantly visible in the begining on top of each other an get removed one by one */
+
+#DivButton1 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    background-color: #368200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+
+}
+
+/* The Header of each window showing relevent information and a cure Kitty as per requirements (except for the Kitty) */
+
+#Head1 {
+    background: url("Images/kitty-551554_1920.jpg");
+    background-size: cover;
+    background-position-y: -150px;
+    background-position-x: 200px;
+    border-radius:20px 20px 0px 0px;
+}
+
+/* Quiz name  */
+#Quiz1 {
+    display: flex;
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+}
+
+/* Question Number */
+#Count1 {
+    margin-left: 20px;
+    font-size: 1.7em;
+}
+
+/* Current Random question asked */
+
+#Question1 {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: white solid 4px;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+
+}
+/*  Buttons  */
+#Button1A, #Button1B, #Button1C, #Button1D {
+    display: block;
+    flex-direction: row;
+    padding: 10px;
+    border: white solid 2px;
+    margin: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+
+/* Buttons hover  */
+#Button1A:hover, #Button1B:hover, #Button1C:hover, #Button1D:hover {
+    background-color: #52dc56;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24), 0 25px 60px 0 rgba(0,0,0,0.19);
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+/* Bottom Buttons  */
+
+/*----------------------------- Below are same as above with a few minor differences -------------------------------   */
+#Button1E {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    top: 90%;
+    position: absolute;
+}
+
+#DivButton2 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    background-color: #368200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+    z-index: -5;
+
+}
+#Head2 {
+    background: url("Images/kitty-551554_1920.jpg");
+    background-size: cover;
+    background-position-y: -150px;
+    background-position-x: 200px;
+    border-radius:20px 20px 0px 0px;
+}
+
+
+#Quiz2 {
+    display: flex;
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+}
+
+
+#Count2 {
+    margin-left: 20px;
+    font-size: 1.7em;
+}
+
+#Question2 {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: white solid 4px;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+
+}
+
+#Button2A, #Button2B, #Button2C, #Button2D {
+    display: block;
+    flex-direction: row;
+    padding: 10px;
+    border: white solid 2px;
+    margin: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+#Button2A:hover, #Button2B:hover, #Button2C:hover, #Button2D:hover {
+    background-color: #52dc56;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24), 0 25px 60px 0 rgba(0,0,0,0.19);
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+
+#Button2E {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    top: 90%;
+    position: absolute;
+}
+
+#DivButton3 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    background-color: #368200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+    z-index: -10;
+
+}
+#Head3 {
+    background: url("Images/kitty-551554_1920.jpg");
+    background-size: cover;
+    background-position-y: -150px;
+    background-position-x: 200px;
+    border-radius:20px 20px 0px 0px;
+}
+
+
+#Quiz3 {
+    display: flex;
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+}
+
+
+#Count3 {
+    margin-left: 20px;
+    font-size: 1.7em;
+}
+
+#Question3 {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: white solid 4px;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+
+}
+
+#Button3A, #Button3B, #Button3C, #Button3D {
+    display: block;
+    flex-direction: row;
+    padding: 10px;
+    border: white solid 2px;
+    margin: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+#Button3A:hover, #Button3B:hover, #Button3C:hover, #Button3D:hover {
+    background-color: #52dc56;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24), 0 25px 60px 0 rgba(0,0,0,0.19);
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+
+#Button3E {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    top: 90%;
+    position: absolute;
+}
+
+
+#DivButton4 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    background-color: #368200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+    z-index: -15;
+
+}
+#Grid {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 200px;
+    grid-row-gap: 20px;
+  }
+#answer4A,#answer4B,#answer4C,#answer4D {
+display: none;
+}
+#label4A:hover,#label4B:hover,#label4C:hover,#label4D:hover {
+opacity:80%;
+}
+
+#Head4 {
+    background: url("Images/kitty-551554_1920.jpg");
+    background-size: cover;
+    background-position-y: -150px;
+    background-position-x: 200px;
+    border-radius:20px 20px 0px 0px;
+}
+
+
+#Quiz4 {
+    display: flex;
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+}
+
+
+#Count4 {
+    margin-left: 20px;
+    font-size: 1.7em;
+}
+
+#Question4 {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: white solid 4px;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+
+}
+
+#Button4A, #Button4B, #Button4C, #Button4D {
+    display: block;
+    flex-direction: row;
+    border: white solid 2px;
+    font-size: 1.5em;
+}
+
+#Button4A:hover, #Button4B:hover, #Button4C:hover, #Button4D:hover {
+    background-color: #52dc56;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24), 0 25px 60px 0 rgba(0,0,0,0.19);
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+
+#Button4E {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    top: 90%;
+    position: absolute;
+}
+
+#DivButton5 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    background-color: #368200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+    z-index: -20;
+
+}
+#Head5 {
+    background: url("Images/kitty-551554_1920.jpg");
+    background-size: cover;
+    background-position-y: -150px;
+    background-position-x: 200px;
+    border-radius:20px 20px 0px 0px;
+}
+
+
+#Quiz5 {
+    display: flex;
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+}
+
+
+#Count5 {
+    margin-left: 20px;
+    font-size: 1.7em;
+}
+
+#Question5 {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: white solid 4px;
+    text-shadow: 3px 3px 0 green,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+
+}
+#Math {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#Math p {
+font-size: 2em;
+
+}
+
+#equationIntro{
+    margin: 50px;
+    align-self: center;
+}
+#equation {
+    margin: 50px;
+    align-self: center;
+}
+#Button5A {
+    display: flex;
+    padding: 10px;
+    margin: 0px 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#answer5A {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+#Button5E {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    top: 90%;
+    position: absolute;
+}
+
+#DivButton6 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 1fr ;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 20px;
+    background: url("Images/cyber-3400789_1920.jpg");
+    background-size: cover;
+    z-index: -25;
+    box-shadow: 50px 50px 50px rgba(126,255,248,0.49);
+
+}
+
+#medal {
+}
+#score {
+    padding: 30px;
+}
+#scoreParagraph1,#scoreParagraph2,#scoreParagraph3{
+    font-size: 1.7em;
+}
+
+#scoreParagraph4{
+    font-size: 1.7em;
+    text-shadow: 3px 3px 0 black,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    grid-row-start: 2;
+    grid-column-end: span 2;
+    padding: 30px;
+}
+#Button6E {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    width: 100%;
+    top: 90%;
+    position: absolute;
+}
+
+
+button {
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color:#4caf50;
+    border: 1px white solid;
+    font-size: 0.75em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #52dc56;
+    box-shadow: 0px 5px 5px 5px lightgreen;
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+#DivButton7 {
+    background-size: cover;
+    height: 750px;
+    width: 750px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -400px;
+    border-radius: 400px;
+    z-index: -30;
+    border: solid 10px black;
+    box-shadow: 100px 100px 100px rgba(126,255,248,0.49);
+
+}
+/* Final Message to teh user  */
+#goodGame {
+    border-radius: 30px;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-size: 6em;
+    text-shadow: 5px 5px 5px lime,
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+    1px 1px 0 green;
+}
+#test {
+    display: inline-block;
+}
+/*  Added a test menu for convinience */
+#testSub {
+    width: 500px;
+    height: 1000px;
+    position: fixed;
+    background-color: gray;
+    font-size: 1.5em;
+    border: 4px red groove;
+    padding: 30px;
+    overflow: scroll;
+    resize: both;
+    z-index: 100;
+    display: none;
+}
+
+#TestButton{
+    font-size: 2em;
+    width: 200px;
+    height: 100px;
+}
+
+
