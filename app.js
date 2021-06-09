@@ -108,7 +108,7 @@ function buildQuiz() {
         if (document.getElementById("answer4A").value === "orchid")
             document.getElementById("myImg").src = "images/orchid.jpg";
         if (document.getElementById("answer4B").value === "lilly")
-            document.getElementById("myImg2").src = "images/Lilly.jpg";
+            document.getElementById("myImg2").src = "images/lilly.jpg";
         if (document.getElementById("answer4C").value === "rose")
             document.getElementById("myImg3").src = "images/rose.jpg";
         if (document.getElementById("answer4D").value === "marg")
